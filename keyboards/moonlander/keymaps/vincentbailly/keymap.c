@@ -78,8 +78,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 const uint16_t PROGMEM combo1[] = {LSFT_T(KC_F), LSFT_T(KC_J), COMBO_END};
+const uint16_t PROGMEM combo2[] = {LCTL_T(KC_D), LCTL_T(KC_K), COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
     COMBO(combo1, KC_ENT),
+    COMBO(combo2, KC_ESC),
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
