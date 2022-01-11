@@ -11,9 +11,9 @@ enum layers {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [BASE] = LAYOUT_split_3x5_3( \
-   KC_Q,         KC_F,         KC_M,         KC_J,         KC_V,              KC_Y,         KC_U,         KC_SLSH,        KC_COMM,        KC_P, \
+   KC_J,         KC_F,         KC_M,         KC_P,         KC_V,              KC_SCLN,      KC_DOT,       KC_SLSH,        KC_COMM,        KC_QUOT, \
    LGUI_T(KC_R), LALT_T(KC_S), LCTL_T(KC_N), LSFT_T(KC_D), KC_W,              KC_SCLN,      LSFT_T(KC_A), LCTL_T(KC_E),   LALT_T(KC_I),   LGUI_T(KC_H), \
-   KC_X,         KC_G,         KC_L,         KC_C,         KC_B,              KC_MINS,      KC_U,         KC_O,           KC_DOT,         KC_K, \
+   KC_X,         KC_G,         KC_L,         KC_C,         KC_B,              KC_MINS,      KC_U,         KC_O,           KC_Y,           KC_K, \
                            KC_LSFT,  LT(NUMBERS, KC_T),  LT(NAV,KC_BSPC),       KC_LSFT,  LT(SYM,KC_SPC), KC_LSFT \
 ),
 [NUMBERS] = LAYOUT_split_3x5_3( \
@@ -44,9 +44,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 const uint16_t PROGMEM combo1[] = {LSFT_T(KC_D), LSFT_T(KC_A), COMBO_END};
 const uint16_t PROGMEM combo2[] = {LCTL_T(KC_N), LCTL_T(KC_E), COMBO_END};
-const uint16_t PROGMEM combo3[] = {KC_Q, KC_F, COMBO_END};
+const uint16_t PROGMEM combo3[] = {KC_J, KC_F, COMBO_END};
+const uint16_t PROGMEM combo4[] = {KC_Y, KC_K, COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
     COMBO(combo1, KC_ENT),
     COMBO(combo2, KC_ESC),
     COMBO(combo3, KC_Z),
+    COMBO(combo4, KC_Q),
 };
