@@ -1,0 +1,4 @@
+COMBO_ENABLE = yes
+CONSOLE_ENABLE = false
+COMMAND_ENABLE = false
+EXTRAFLAGS+=-flto
