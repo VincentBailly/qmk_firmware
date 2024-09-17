@@ -18,5 +18,8 @@
 
 #pragma once
 
+#define QUICK_TAP_TERM 0
+#define HOLD_ON_OTHER_KEY_PRESS
+
 /* Trackball angle adjustment. */
 #define ROTATIONAL_TRANSFORM_ANGLE -25
