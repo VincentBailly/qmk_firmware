@@ -19,6 +19,7 @@
 #pragma once
 
 #define QUICK_TAP_TERM 0
+
 #define PERMISSIVE_HOLD
 
 /* Trackball angle adjustment. */

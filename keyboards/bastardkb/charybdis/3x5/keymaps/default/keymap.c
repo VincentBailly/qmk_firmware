@@ -18,6 +18,7 @@
 #include QMK_KEYBOARD_H
 
 // To compile, use the following command:
+// Warning: Incremental build does not always work well, it is recommended to remove the .build folder before each compilation
 //  qmk compile -kb bastardkb/charybdis/3x5/v1/elitec -km default
 // Use the Qmk toolbox to flash the firmware to the keyboard
 
