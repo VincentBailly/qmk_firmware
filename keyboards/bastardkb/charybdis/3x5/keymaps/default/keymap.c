@@ -17,6 +17,11 @@
 
 #include QMK_KEYBOARD_H
 
+// To compile, use the following command:
+//  qmk compile -kb bastardkb/charybdis/3x5/v1/elitec -km default
+// Use the Qmk toolbox to flash the firmware to the keyboard
+
+
 enum charybdis_keymap_layers {
   //  LAYER_BASE = 0,
   //  LAYER_LOWER,
@@ -58,7 +63,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [LAYER_NAV] = LAYOUT( 
     QK_BOOT,      KC_NO,      KC_NO,      KC_NO,      KC_NO,                      KC_NO,        KC_PAGE_DOWN,  KC_PAGE_UP,     KC_NO,          KC_NO, 
     KC_LGUI,    KC_LALT,    KC_LCTL,    KC_LSFT,    KC_NO,                        KC_LEFT,      KC_DOWN,       KC_UP,          KC_RIGHT,       KC_NO, 
-    KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,                        KC_NO,        KC_HOME,       KC_END,         KC_NO,          KC_NO, 
+    KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,                        KC_INS,        KC_HOME,       KC_END,         KC_NO,          KC_NO, 
                                        KC_NO,      KC_LSFT,     KC_NO,                     KC_LSFT,   KC_NO 
 ),
 [LAYER_FN] = LAYOUT( 
